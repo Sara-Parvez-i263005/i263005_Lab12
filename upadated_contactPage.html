@@ -1,0 +1,66 @@
+<!-- Sara Parvez, 26I-3005, Cafe Contact -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Warm Roast Café - Visit Us</title>
+</head>
+<body>
+
+    <header>
+        <h1>Warm Roast Café</h1>
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Visit Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Hours & Location</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+            <tr>
+                <td>Monday – Friday</td>
+                <td>7:30 AM – 9:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday – Sunday</td>
+                <td>8:30 AM – 10:30 PM</td>
+            </tr>
+        </table>
+
+        <h2>Contact Us</h2>
+        <div class="text-box" style="text-align: center; margin-bottom: 25px;">
+            <p>For inquiries, catering, or table bookings, reach out directly to:</p>
+            <p><strong>Sara Parvez</strong>: <a href="mailto:i263005@isb.nu.edu.pk" style="color: #411900; text-decoration: underline;">i263005@isb.nu.edu.pk</a></p>
+        </div>
+
+        <h2>Reserve a Table or Leave a Note</h2>
+        
+        <form class="contact-form" onsubmit="event.preventDefault(); submitFeedback();">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email Address" required>
+            <textarea id="message" rows="4" placeholder="Your Message or Special Request..." required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Warm Roast Café. Crafted with warmth & cocoa.</p>
+    </footer>
+
+    <script>
+        function submitFeedback() {
+            var userName = document.getElementById('name').value;
+            console.log("Feedback received from: " + userName);
+            window.alert("Thank you, " + userName + "! We have received your note and look forward to hosting you.");
+        }
+    </script>
+</body>
+</html>
